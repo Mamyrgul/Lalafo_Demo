@@ -5,7 +5,7 @@ public class Announcement {
     private String name;
     private String description;
     private int price;
-    private User user;
+    private Long user;
 
     public Long getId() {
         return id;
@@ -39,15 +39,15 @@ public class Announcement {
         this.price = price;
     }
 
-    public User getUser() {
+    public Long getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(Long user) {
         this.user = user;
     }
 
-    public Announcement(Long id, String name, String description, int price, User user) {
+    public Announcement(Long id, String name, String description, int price, Long user) {
         this.id = id;
         this.name = name;
         this.description = description;
