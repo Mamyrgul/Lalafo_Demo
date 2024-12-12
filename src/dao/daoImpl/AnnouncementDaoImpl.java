@@ -3,7 +3,6 @@ package dao.daoImpl;
 import dao.AnnouncementDao;
 import dataBase.DataBase;
 import models.Announcement;
-import models.User;
 
 import java.util.List;
 
@@ -40,7 +39,7 @@ public class AnnouncementDaoImpl implements AnnouncementDao {
 
     @Override
     public void deleteAnnouncementById(Long id) {
-     boolean delete= DataBase.announcements.removeIf(announcement -> announcement.getId().equals(id));
+    boolean delete = DataBase.announcements.removeIf(announcement -> announcement.getId().equals(id));
         System.out.println(delete?"Successfully deleted":"Try again");
     }
 }
