@@ -1,6 +1,6 @@
 package models;
 
-import dao.enums.Role;
+import enums.Role;
 
 public class User {
     private Long id;
